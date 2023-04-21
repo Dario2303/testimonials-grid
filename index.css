@@ -23,23 +23,47 @@
     --title-testimonial: hsl(219, 29%, 14%);
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--Light-grayish-blue);
-    font-size: 13px;
     font-family: var(--primay-font);
+}
+
+@media (min-width: 768px) { 
+    body {
+        height: 100vh;
+    }
 }
 
 p {
     color: var(--testimonial);
+    margin: 0;
+    font-size: 1rem;
 }
 
 h2, h3 {
     color: var(--title-testimonial);
+    margin: 0;
+}
+
+h2{
+    font-size: 2rem;
 }
 
 .grid_container {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 110rem;
+    height: 57.2rem;
+    margin: 2rem;
 }
 
 @media (min-width: 768px) { 
@@ -47,18 +71,46 @@ h2, h3 {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 2rem;
+        margin: 0;
     }
 }
 
 .info_container {
     border-radius: 8px;
-    padding: 1rem;
+    padding: 3rem 3.3rem;
+    opacity: 0.85;
+    transition: all;
+    transition-duration: 300ms;
 }
 
-.personal_date img {
-    float: left;
+.info_container:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.personal_date {
+    display: flex;
+    align-items: center;
+}
+
+.personal_date div:nth-child(2) {
+    margin-left: 1rem;
+}
+
+.personal_date p {
+    padding-top: 0.5rem;
+}
+
+ .personal_date img {
+    width: 4rem;
     border-radius: 50%;
-    border: 5px solid var(--light-violet);
+    transition-property: border;
+    transition-duration: 300ms;
+    border: 0px solid var(--light-violet);
+}
+
+.info_container:hover .personal_date img {
+    border: 3px solid var(--light-violet);
 }
 
 .title-testimonial {
@@ -68,7 +120,9 @@ h2, h3 {
 .testimonial {
     letter-spacing: 1px;
     line-height: 1.5;
+    margin-top: 2rem;
 }
+
 
 .daniel {
     background-color: var(--moderate-violet);
@@ -105,6 +159,22 @@ h2, h3 {
     }
 }
 
+.box1 {
+    animation: traslate 1s ease-in-out;
+}
+
+
+@keyframes traslate {
+    0% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
 
 
 
