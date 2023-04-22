@@ -83,7 +83,7 @@ h2{
 
 .info_container:hover {
     opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1.02);
     transition-property: all;
     transition-duration: 300ms;
 }
@@ -121,7 +121,10 @@ h2{
     letter-spacing: 1px;
     line-height: 1.5;
     margin-top: 2rem;
-    font-size:
+}
+
+.testimonial p {
+    font-size:12px;
 }
 
 
