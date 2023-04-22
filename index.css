@@ -79,6 +79,8 @@ h2{
     border-radius: 8px;
     padding: 3rem 3.3rem;
     opacity: 0.85;
+    transition-property:transform opacity ease-in-out;
+    transition-duration: 300ms;
 }
 
 .info_container:hover {
@@ -89,14 +91,14 @@ h2{
 .personal_date img {
     width: 4rem;
     border-radius: 50%;
-    border: 0px;
+    border: 3px solid transparent;
 }
 
 
 .info_container:hover .personal_date img {
     border: 3px solid var(--light-violet);
     transition-property: border;
-    transition-duration: 500ms;
+    transition-duration: 1000ms;
 }
 
 .personal_date {
@@ -105,10 +107,8 @@ h2{
 }
 
 .personal_date div:first-child {
-    width: 5rem;
-    height: 5rem;
-    padding: 2px;
-    overflow: hidden;
+    width: 4.5rem;
+    height: 4.5rem;
 }
 
 .personal_date div:nth-child(2) {
