@@ -83,14 +83,32 @@ h2{
 
 .info_container:hover {
     opacity: 1;
-    transform: scale(1.02);
-    transition-property: all;
-    transition-duration: 300ms;
+    transform: scale(1.05);
+}
+
+.personal_date img {
+    width: 4rem;
+    border-radius: 50%;
+    border: 0px;
+}
+
+
+.info_container:hover .personal_date img {
+    border: 3px solid var(--light-violet);
+    transition-property: border;
+    transition-duration: 500ms;
 }
 
 .personal_date {
     display: flex;
     align-items: center;
+}
+
+.personal_date div:first-child {
+    width: 5rem;
+    height: 5rem;
+    padding: 2px;
+    overflow: hidden;
 }
 
 .personal_date div:nth-child(2) {
@@ -99,18 +117,6 @@ h2{
 
 .personal_date p {
     padding-top: 0.5rem;
-}
-
- .personal_date img {
-    width: 4rem;
-    border-radius: 50%;
-    transition-property: border;
-    transition-duration: 300ms;
-    border: 0px solid var(--light-violet);
-}
-
-.info_container:hover .personal_date img {
-    border: 3px solid var(--light-violet);
 }
 
 .title-testimonial {
