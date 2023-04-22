@@ -81,7 +81,21 @@ h2{
     opacity: 0.85;
     transition-property:transform opacity ease-in-out;
     transition-duration: 300ms;
+    position: relative;
 }
+
+.info_container.daniel::before  {
+    content: '';
+    display: block;
+    background: url(./images/bg-pattern-quotation.svg);
+    width: 10rem;
+    height: 10rem;
+    opacity: 0.4;
+    position: absolute;
+    right: 4rem;
+    z-index: -1;
+}
+
 
 .info_container:hover {
     opacity: 1;
