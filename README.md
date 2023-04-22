@@ -1,7 +1,7 @@
 
 # Frontend Mentor - Testimonials grid section
 
-<a href="https://loopstudios-two-pied.vercel.app/">
+<a href="https://testimonials-grid-pi-two.vercel.app/">
 <img align="right" width="500" src="./design/desktop-preview.jpg"/>
 </a>
 
