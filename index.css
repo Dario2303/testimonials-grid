@@ -79,13 +79,13 @@ h2{
     border-radius: 8px;
     padding: 3rem 3.3rem;
     opacity: 0.85;
-    transition: all;
-    transition-duration: 300ms;
 }
 
 .info_container:hover {
     opacity: 1;
     transform: scale(1.05);
+    transition-property: all;
+    transition-duration: 300ms;
 }
 
 .personal_date {
@@ -121,6 +121,7 @@ h2{
     letter-spacing: 1px;
     line-height: 1.5;
     margin-top: 2rem;
+    font-size:x-large;
 }
 
 
@@ -159,20 +160,85 @@ h2{
     }
 }
 
-.box1 {
-    animation: traslate 1s ease-in-out;
-}
-
-
-@keyframes traslate {
-    0% {
-        transform: translateX(-150%);
-        opacity: 0;
+@media (min-width: 768px) { 
+    .box1 {
+        animation: traslate_daniel 1s ease-in-out;
     }
-
-    100% {
-        transform: translateX(0%);
-        opacity: 1;
+    
+    @keyframes traslate_daniel {
+        0% {
+            transform:translate(-100%, -100%);
+            opacity: 0;
+        }
+    
+        100% {
+            transform:translate(0%, 0%);
+            opacity: 0.85;
+        }
+    }
+    
+    .box2 {
+        animation: traslate_jonathan 1s ease-in-out;
+    }
+    
+    @keyframes traslate_jonathan {
+        0% {
+            transform:translateY(-100%);
+            opacity: 0;
+        }
+    
+        100% {
+            transform:translateY(0%);
+            opacity: 0.85;
+        }
+    }
+    
+    .box3 {
+        animation: traslate_kira 1s ease-in-out;
+    }
+    
+    @keyframes traslate_kira {
+        0% {
+            transform:translateX(100%);
+            opacity: 0;
+        }
+    
+        100% {
+            transform:translateX(0%);
+            opacity: 0.85;
+        }
+    }
+    
+    .box4 {
+        animation: traslate_jeanette 1s ease-in-out;
+    }
+    
+    @keyframes traslate_jeanette {
+        0% {
+            transform:translateY(100%);
+            opacity: 0;
+        }
+    
+        100% {
+            transform:translateY(0%);
+            opacity: 0.85;
+        }
+    }
+    
+    .box5 {
+        animation: traslate_patrick 1s ease-in-out;
+    }
+    
+    @keyframes traslate_patrick {
+        0% {
+            transform:translate(100%, 100%);
+            opacity: 0;
+        }
+    
+        100% {
+            transform:translate(0%);
+            opacity: 0.85;
+        }
     }
 }
 
